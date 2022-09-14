@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div-verde {
+  height: 405px;
+  background-color: #007f98;
+}
+
+.img-banner {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.div-conteudo {
+  height: 313px;
+  max-width: 1118px;
+  background-color: #fff;
+  margin: 0 auto;
+  transform: translateY(-50px);
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-shadow: 0px 9px 22px 8px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 9px 22px 8px rgba(0, 0, 0, 0.23);
+}
+
+.paragrafo-branco {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.img-001-institucional {
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.img-002-institucional {
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.img-icon {
+  margin-right: 2em;
+}
+
+.dados-verita-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 543px;
+}
+
+.paragrafo-conteudo-dados {
+  font-family: sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0.6em;
+}
+
+.dados-verita-pesquisas,
+.dados-verita-entrevistas,
+.dados-verita-indice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
