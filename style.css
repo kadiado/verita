@@ -67,7 +67,7 @@ a {
 }
 
 .paragrafo-branco {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 400;
   color: rgb(66, 66, 66);
 }
@@ -75,19 +75,19 @@ a {
 .img-001-institucional {
   display: flex;
   align-items: center;
-  margin-right: 2em;
+  margin-right: 1em;
   cursor: pointer;
 }
 
 .img-002-institucional {
   display: flex;
   align-items: center;
-  margin-right: 2em;
+
   cursor: pointer;
 }
 
 .img-icon {
-  margin-right: 2em;
+  margin-right: 1em;
 }
 
 .dados-verita-container {
