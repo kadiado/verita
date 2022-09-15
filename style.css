@@ -43,6 +43,9 @@ a {
   text-decoration: none;
 }
 
+.img-banner-mobile {
+  display: none;
+}
 .div-verde {
   height: 405px;
   background-color: #007f98;
@@ -171,6 +174,15 @@ a {
 
 @media (max-width: 600px) {
   /* Conteudo */
+
+  .img-banner-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .img-banner {
+    display: none;
+  }
 
   .div-conteudo {
     flex-direction: column;
