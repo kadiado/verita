@@ -70,3 +70,45 @@
   flex-direction: column;
   align-items: center;
 }
+
+.footer-verita {
+  background-color: rgb(230, 230, 230);
+  height: 616px;
+  padding: 90px 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-verita {
+  max-width: 350px;
+}
+
+.instagram-rodape {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.instagram-rodape > p {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.container-rodape-logo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.div-rodape-info > p {
+  text-align: right;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.container-rodape-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
