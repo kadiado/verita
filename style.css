@@ -1,8 +1,42 @@
+@font-face {
+  font-family: "Gotham";
+  src: url(./Fonts/Gotham-Bold.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url(./Fonts/Gotham-Black.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url(./Fonts/Gotham-Light.otf) format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url(./Fonts/Gotham-Medium.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url(./Fonts/GothamBook.ttf) format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Gotham";
 }
 
 a {
@@ -12,6 +46,7 @@ a {
 .div-verde {
   height: 405px;
   background-color: #007f98;
+  padding: 0 10px;
 }
 
 .img-banner {
@@ -32,10 +67,9 @@ a {
 }
 
 .paragrafo-branco {
-  font-family: sans-serif;
   font-size: 1.2em;
-  font-weight: 700;
-  color: black;
+  font-weight: 400;
+  color: rgb(66, 66, 66);
 }
 
 .img-001-institucional {
@@ -60,15 +94,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 543px;
+  min-height: 543px;
 }
 
 .paragrafo-conteudo-dados {
-  font-family: sans-serif;
   font-size: 1.8em;
-  font-weight: 700;
+  font-weight: 300;
   text-align: center;
   margin-top: 0.6em;
+  color: #666666;
+}
+
+.texto-span-bold {
+  font-weight: 800;
 }
 
 .dados-verita-pesquisas,
@@ -77,11 +115,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-verita {
   background-color: rgb(230, 230, 230);
-  height: 616px;
+  min-height: 616px;
   padding: 90px 160px;
   display: flex;
   justify-content: space-between;
@@ -98,8 +137,8 @@ a {
 }
 
 .instagram-rodape > p {
-  font-family: sans-serif;
-  font-weight: 600;
+  font-weight: 300;
+  color: #666666;
 }
 .container-rodape-logo {
   height: 100%;
@@ -110,9 +149,9 @@ a {
 
 .div-rodape-info > p {
   text-align: right;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 20px;
+  color: #666666;
 }
 
 .container-rodape-info {
@@ -123,6 +162,71 @@ a {
 
 .copyright {
   text-align: right;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 300;
+  color: #666666;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  /* Conteudo */
+
+  .div-conteudo {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .dados-verita-container {
+    flex-direction: column;
+    padding: 100px 0;
+  }
+
+  .dados-verita-pesquisas,
+  .dados-verita-entrevistas,
+  .dados-verita-indice {
+    margin-bottom: 70px;
+  }
+
+  .img-001-institucional,
+  .img-002-institucional {
+    margin: 0;
+  }
+
+  .img-icon {
+    margin-right: 10px;
+  }
+
+  /* Footer */
+  .footer-verita {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .container-rodape-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 40px 0;
+  }
+
+  .container-rodape-info {
+    display: inline-block;
+  }
+
+  .div-rodape-info > p {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  .logo-verita {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
